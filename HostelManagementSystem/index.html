@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/faviconnew.jpeg">
+    <title>Hostel Management System</title>
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+    <style>
+            body{
+                overflow: hidden;
+            }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site-header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(57deg, #00c6a7, #1e4d92);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+
+}
+.logo{
+    width:100%;
+    height: 100px;
+}
+.logo h1{
+    line-height: 100px;
+    padding-left: 60px;
+}
+.abc{
+    width:100%;
+    height: 50px;
+}
+.abc p{
+    line-height:0px;
+    padding-left: 60px;
+}
+section{
+    display:flex;
+}
+.left-side{
+    width:45%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+.left-side img{
+    width: 600px;
+    height: 400px;
+}
+.right-side{
+    width:55%;
+    height:250px;
+    color:white;
+    text-align: center;
+    margin-top: 25px;
+    
+    padding: 40px;
+}
+.right-side h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.right-side p{
+    font-size: 1.1rem;
+    padding: 30px 0;
+}
+.right-side button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(57deg,#1e4d92, #00c6a7 );
+    border-radius: 4px;
+    padding: 20px 35px;
+}
+.right-side button:hover{
+    background: linear-gradient(57deg,#00c6a7, #1e4d92 );
+}
+
+        </style>
+
+    <script type="text/javascript">
+    function valid() {
+    if(document.registration.password.value!= document.registration.cpassword.value){
+        alert("Password and Re-Type Password Field do not match  !!");
+    document.registration.cpassword.focus();
+    return false;
+        }
+    return true;
+        }
+    </script>
+
+</head>
+
+<!-- By CodeAstro - codeastro.com -->
+
+<body>
+        <header class="site-header">
+            <nav>
+                <div class="logo">
+                <h1>HOSTEL MANAGEMENT SYSTEM</h1>
+                
+                </div>
+            </nav>
+            <section>
+                <div class="left-side">
+                    <img src="hostel-image2.jpg">
+                </div>
+                <div class="right-side">
+                    <h1>WELCOME <br>TO<br> HOSTEL MANAGEMENT SYSTEM</h1>
+                        <p>"Come as strangers, leave as friends"</p>
+                        
+                        <!--<div class="col-lg-12 text-center mt-5">
+                                   <a href="admin/index.php" class="text-danger">Go to Admin Panel</a>
+                                </div>-->
+                                <button type="submit"><a href="admin/index.php" class="text-danger"> GO TO ADMIN PANEL</a> </button>
+                    
+                    
+                </div>
+            </section>
+        </header>
+    </body>
+</html>
